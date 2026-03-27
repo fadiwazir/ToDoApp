@@ -1,16 +1,94 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-primary: #2F6690;
+  --color-secondary: #3A7CA5;
+  --color-accent: #81C3D7;
+  --color-dark: #16425B;
+  --color-light: #D9DCD6;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: aqua;
+  background-color: var(--color-light);
 }
 
-.container{
-  background-color: red;
+.container {
+  background-color: var(--color-secondary);
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 100px;
   border-radius: 20px;
+  width: 80%;
+  height: auto;
+}
+
+.container h1 {
+  font-size: 46px;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.content {
+  margin: 50px 0;
+}
+
+.input-section input {
+  background-color: var(--color-dark);
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  color: var(--color-light);
+  font-weight: bold;
+  padding: 10px 24px;
+  margin-right: 8px;
+  transition: 0.5s;
+
+}
+
+.input-section input::placeholder {
+  color: #d9dcd6a2;
+  font-weight: bold;
+}
+
+.input-section input:focus,
+input:hover {
+  background-color: var(--color-primary);
+  outline: none;
+}
+
+button {
+  border: none;
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  transition: 0.4s;
+}
+
+.add-btn:hover {
+  cursor: pointer;
+  scale: 1.08;
+  background-color: #008000;
+}
+
+.task-container {
+  background-color: var(--color-light);
+  border-radius: 20px;
+  margin-top: 30px;
+
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 8px 10px;
+  font-weight: bold;
 }
