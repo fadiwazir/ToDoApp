@@ -9,18 +9,19 @@ function addTask() {
     <li>${inputText.value}</li>
     <button class="delete-btn">Delete</button>
   </div>`
+  taskArr.push(inputText.value)
+  inputText.value = '';
 
-  inputText.value = ''
 }
 
-function enterBtn(){
+function enterBtn() {
   inputText.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    console.log('is enter')
-  } else {
-    alert('Task Is empty')
-  }
-})
+    if (e.key === 'Enter') {
+      console.log('is enter')
+    } else {
+      alert('Task Is empty')
+    }
+  })
 }
 
 
