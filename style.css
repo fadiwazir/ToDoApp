@@ -91,4 +91,33 @@ li {
   margin: 0;
   padding: 8px 10px;
   font-weight: bold;
+  color: var(--color-lightgit);
+}
+
+.delete-btn {
+  border: none;
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #bf0603;
+  color: white;
+  transition: 0.4s;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+  scale: 1.08;
+  background-color: #8d0801;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  width: auto;
+  background-color: var(--color-dark);
+  border-radius: 20px;
 }
